@@ -65,10 +65,10 @@ function getUserConstructor() {
 		this.name = options.name;
 		this.email = options.email;
 		this.password = options.password;
-		this.sayHi = function(){
-		return 'Hello, my name is ' + this.name;
-		};
 	}
+	User.prototype.sayHi = function(){
+		return 'Hello, my name is ' + this.name;
+	};
 	return User;
 }
 
